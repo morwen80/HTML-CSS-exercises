@@ -2,162 +2,172 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Ariana Grande Tour</title>
   </head>
   <style>
   @import url('https://fonts.googleapis.com/css?family=Limelight');
-  @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 
-  html, body {
-    background-color: #EDC59D;
-    font-family: Lato, sans-serif;
-  }
-  nav {
-    padding: .8rem;
-  }
-  nav li {
-    list-style-type: none;
-    display: inline-block;
-    padding-right: .5rem;
-  }
-  section {
-    display: flex;
-    width: 100%;
-  }
+html, body {
+  background-color: #EDC59D;
+  font-family: Lato, sans-serif;
+}
 
-  header {
-    width: 100%;
-  }
-  .container {
-    width: 80%;
-     border-radius: 5px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-     box-shadow: 5px 10px 10px #BA7766;
-  }
+section {
+  display: flex;
+  width: 100%;
+}
 
-  nav {
-    width: 100%;
-    background-color: #EFCEAD;
-  }
-  #ariana {
-  object-fit: cover;
-    width: 100%;
-    height: 500px;
-  }
+header {
+  width: 100%;
+}
+.box {
+  width: 80%;
+   border-radius: 5px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+   box-shadow: 5px 10px 10px #BA7766;
+}
 
-  #bio, #tour {
-    padding: 1rem;
-    background-color: #FFE0C3;
-  }
 
-  .bio-text, .title, .album, .tracks {
-    width: 50%;
-  }
-  .bio-text {
-    margin: 1rem;
-    line-height: 150%;
-  }
-  h1 {
-    font-size: 3rem;
-    font-family: 'Limelight', cursive;
-  }
-  h2 {
-    font-size: 2rem;
-     font-family: 'Limelight', cursive;
-  }
-  .title {
-    text-align: center;
-    line-height: 100%;
-    margin: auto;
-  }
+#ariana {
+object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
 
-  .tracks {
-    line-height: 135%;
-    padding: 0 1.5rem 0 1.5rem;
-  }
+#bio, #tour {
+  padding: 1rem;
+  background-color: #FFE0C3;
+}
 
-  ol li {
-    font-family: Lato, sans-serif;
-    font-size: 1rem;
-  }
+.bio-text, .title, .album, .tracks {
+  width: 50%;
+}
+.bio-text {
+  margin: 1rem;
+  line-height: 150%;
+}
+h1 {
+  font-size: 3rem;
+  font-family: 'Limelight', cursive;
+}
+h2 {
+  font-size: 2rem;
+   font-family: 'Limelight', cursive;
+}
+.title {
+  text-align: center;
+  line-height: 100%;
+  margin: auto;
+}
 
-  #new-album {
-    background-color: #EFCEAD;
-  }
+.tracks {
+  line-height: 135%;
+  padding: 0 1.5rem 0 1.5rem;
+}
 
-  .footer {
-    text-align: center;
-    font-size: .9rem;
-    padding: 1rem;
-    color: #BA7766;
-  }
+ol li {
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+}
+
+#new-album {
+  background-color: #EFCEAD;
+}
+
+.footer {
+  text-align: center;
+  font-size: .9rem;
+  padding: 1rem;
+  color: #BA7766;
+}
+
 
   </style>
   <body>
-    <div class="container">
-   <header>
-    <nav>
-     <ul>
-       <li>Sweetener Tour</li>
-       <li><a href="#bio">The New Album</a></li>
-       <li><a href="#new-album">Discover Sweetener</a></li>
-       <li><a href="#tour">Tour Dates</a></li>
-      </ul>
-     </nav>
-     <img id="ariana" src="https://www.etonline.com/sites/default/files/images/2018-07/1280_dailydenny_newmusic_071318.jpg">
-   </header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+<a class="navbar-brand" href="#">Sweetener Tour</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+ <ul class="navbar-nav">
+   <li class="nav-item">
+     <a class="nav-link" href="#bio">The New Album</a>
+   </li>
+   <li class="nav-item">
+     <a class="nav-link" href="#new-album">Discover Sweetener</a>
+   </li>
+   <li class="nav-item">
+     <a class="nav-link" href="#tour">Tour Dates</a>
+   </li>
 
-  <section id="bio">
- <div class="bio-text">
-     Sweetener is the fourth studio album by American singer Ariana Grande. It was released on August 17, 2018, through Republic Records.
-     <br>
-     The album is the follow-up to her 2016 studio album, Dangerous Woman, and features guest appearances from Pharrell Williams, Nicki Minaj and Missy Elliott.
- <br>
- The lead single, "No Tears Left to Cry", was released on April 20, 2018, and debuted at number three on the US Billboard Hot 100. "The Light Is Coming", featuring Minaj, was released as a promotional single on June 20, 2018, along with the pre-order of the album. "God Is a Woman" was released as the second single on July 13, 2018, and peaked at number 8.
-     </div>
-      <div class="title">
-        <h1>SWEETENER</h1>
-          <h2>Ariana Grande</h2>
-    </div>
-   </section>
+ </ul>
+</div>
+</nav>
 
-   <section id="new-album">
-  <div class="tracks">
-    <h2>The Tracklist</h2>
-    <ol>
-      <li>Raindrops (An Angel Cried)</li>
-      <li>Blazed (featuring Pharrell Williams)</li>
-      <li>The Light Is Coming (featuring Nicki Minaj)</li>
-      <li>R.E.M</li>
-      <li>God Is a Woman</li>
-      <li>Sweetener</li>
-      <li>Successful</li>
-      <li>Everytime</li>
-      <li>Breathin</li>
-      <li>No Tears Left to Cry</li>
-      <li>Borderline (featuring Missy Elliott)</li>
-      <li>Better Off</li>
-      <li>Goodnight n Go</li>
-      <li>Pete Davidson</li>
-      <li>Get Well Soon</li>
-    </ol>
+
+
+  <img id="ariana" src="https://www.etonline.com/sites/default/files/images/2018-07/1280_dailydenny_newmusic_071318.jpg">
+</header>
+
+<section id="bio">
+<div class="bio-text">
+  Sweetener is the fourth studio album by American singer Ariana Grande. It was released on August 17, 2018, through Republic Records.
+  <br>
+  The album is the follow-up to her 2016 studio album, Dangerous Woman, and features guest appearances from Pharrell Williams, Nicki Minaj and Missy Elliott.
+<br>
+The lead single, "No Tears Left to Cry", was released on April 20, 2018, and debuted at number three on the US Billboard Hot 100. "The Light Is Coming", featuring Minaj, was released as a promotional single on June 20, 2018, along with the pre-order of the album. "God Is a Woman" was released as the second single on July 13, 2018, and peaked at number 8.
   </div>
-  <div class="album">
-  <img src="https://www.eventim.de/magazin/fileadmin/user_upload/ariana-grande-sweetener-album-cover.jpg"></div>
-  </section>
-
-  <section id="tour">
-    <div class='tour-dates'>
-      <h2>Tour Dates</h2>
-        coming soon
-    </div>
-  </section>
-
+   <div class="title">
+     <h1>SWEETENER</h1>
+       <h2>Ariana Grande</h2>
  </div>
+</section>
 
-  <div class="footer">coded by Valeria Ragonese</div>
+<section id="new-album">
+<div class="tracks">
+ <h2>The Tracklist</h2>
+ <ol>
+   <li>Raindrops (An Angel Cried)</li>
+   <li>Blazed (featuring Pharrell Williams)</li>
+   <li>The Light Is Coming (featuring Nicki Minaj)</li>
+   <li>R.E.M</li>
+   <li>God Is a Woman</li>
+   <li>Sweetener</li>
+   <li>Successful</li>
+   <li>Everytime</li>
+   <li>Breathin</li>
+   <li>No Tears Left to Cry</li>
+   <li>Borderline (featuring Missy Elliott)</li>
+   <li>Better Off</li>
+   <li>Goodnight n Go</li>
+   <li>Pete Davidson</li>
+   <li>Get Well Soon</li>
+ </ol>
+</div>
+<div class="album">
+<img src="https://www.eventim.de/magazin/fileadmin/user_upload/ariana-grande-sweetener-album-cover.jpg"></div>
+</section>
+
+<section id="tour">
+ <div class='tour-dates'>
+   <h2>Tour Dates</h2>
+     coming soon
+ </div>
+</section>
+
+</div>
+
+<div class="footer">coded by Valeria Ragonese</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
