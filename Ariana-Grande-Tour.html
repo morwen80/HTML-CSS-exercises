@@ -17,7 +17,7 @@ html, body {
 
 section {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
 }
 
@@ -86,9 +86,14 @@ ol li {
 .album {
   justify-content: center;
   order: 4;
+  /* padding: 1rem; */
 }
 .album img {
-  width: 350px;
+  /* display: block;
+  margin-left: auto;
+    margin-right: auto; */
+    align-self: center;
+    width: 70%;
 }
 .footer {
   text-align: center;
@@ -117,6 +122,18 @@ ol li {
       width: 100%;
       padding: 0;
       font-size: 1.2rem;
+    }
+    .album {
+      order: 3;
+      width: 100%;
+    }
+    .album img {
+      width: 80%;
+    }
+
+    .tracks {
+      order: 4;
+      width: 100%;
     }
 }
 
@@ -152,11 +169,13 @@ ol li {
 
 <section id="bio">
 <div class="bio-text">
-  Sweetener is the fourth studio album by American singer Ariana Grande. It was released on August 17, 2018, through Republic Records.
+  <strong>Sweetener</strong> is the fourth studio album by Ariana Grande.
+  <br>It was released on August 17, 2018, through Republic Records.
   <br>
   The album is the follow-up to her 2016 studio album, Dangerous Woman, and features guest appearances from Pharrell Williams, Nicki Minaj and Missy Elliott.
 <br>
-The lead single, "No Tears Left to Cry", was released on April 20, 2018, and debuted at number three on the US Billboard Hot 100. "The Light Is Coming", featuring Minaj, was released as a promotional single on June 20, 2018, along with the pre-order of the album. "God Is a Woman" was released as the second single on July 13, 2018, and peaked at number 8.
+The lead single, "No Tears Left to Cry", was released on April 20, 2018, and debuted at number three on the US Billboard Hot 100.
+"The Light Is Coming", featuring Minaj, was released as a promotional single on June 20, 2018, along with the pre-order of the album. "God Is a Woman" was released as the second single on July 13, 2018, and peaked at number 8.
   </div>
    <div class="title">
      <h1>SWEETENER</h1>
