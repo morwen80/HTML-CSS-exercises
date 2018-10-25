@@ -17,6 +17,7 @@ html, body {
 
 section {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -25,12 +26,12 @@ header {
 }
 .box {
   width: 80%;
-   border-radius: 5px;
+  border-radius: 5px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-   box-shadow: 5px 10px 10px #BA7766;
+  box-shadow: 5px 10px 10px #BA7766;
 }
 
 
@@ -51,6 +52,7 @@ object-fit: cover;
 .bio-text {
   margin: 1rem;
   line-height: 150%;
+  order: 1;
 }
 h1 {
   font-size: 3rem;
@@ -64,22 +66,30 @@ h2 {
   text-align: center;
   line-height: 100%;
   margin: auto;
-}
-
-.tracks {
-  line-height: 135%;
-  padding: 0 1.5rem 0 1.5rem;
-}
-
-ol li {
-  font-family: Lato, sans-serif;
-  font-size: 1rem;
+  order: 2;
 }
 
 #new-album {
   background-color: #EFCEAD;
 }
 
+.tracks {
+  line-height: 135%;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  order: 3;
+}
+
+ol li {
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+}
+.album {
+  justify-content: center;
+  order: 4;
+}
+.album img {
+  width: 350px;
+}
 .footer {
   text-align: center;
   font-size: .9rem;
@@ -87,9 +97,33 @@ ol li {
   color: #BA7766;
 }
 
+@media only screen and (max-width: 600px) {
+    .box {
+      width: 100%;
+    }
+    .title {
+      order: 1;
+      width: 100%;
+      padding-top: 1rem;
+    }
+    h1 {
+      font-size: 3.5rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    .bio-text {
+      order: 2;
+      width: 100%;
+      padding: 0;
+      font-size: 1.2rem;
+    }
+}
 
   </style>
   <body>
+    <div class="box">
+   <header>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
 <a class="navbar-brand" href="#">Sweetener Tour</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
